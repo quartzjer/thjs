@@ -189,7 +189,7 @@ self.exchange = function(args)
      var sid = handshake.slice(0,16).toString('hex'); // stable token  bytes
      if(x.sid != sid)
      {
-       console.log("new ephemeral")
+       //console.log("new ephemeral")
        x.session = new csets[csid].Ephemeral(cs, handshake.body);
        x.sid = sid;
        x.z = parseInt(inner.z);
